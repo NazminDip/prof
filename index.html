@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dipty</title>
+<style>
+
+body{
+
+style="background-color:LightGray;"
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #FFA500}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
+
+
+    <!-- adding google font cdn here  -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Montserrat&family=Satisfy&display=swap" rel="stylesheet">
+
+
+    <!-- adding font awesome cdn here  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- for mobile phone -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- for tablets -->
+    <link rel="stylesheet" href="tablet.css" media="screen and (min-width: 600px)">
+ <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+  <!-- Bootstrap CSS -->
+   
+ 
+     <!-- for desktops -->
+    <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 992px)">
+
+    <!-- for large laptop or desktops -->
+      <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 1200px)">
+    
+</head>
+<body>
+
+    <!-- navbar starts here  -->
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+  <a class="navbar-brand" href=""><h1 style="font-family:cursive; font-color:white"><center><marquee>Assalamuwalaikum.Welcome to my Portfolio</marquee></center></h1></a>
+  
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 200px;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#"><img src="img/house.png"   width="50px"  height="50px" alt="/"> Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about-me-id"><img src="img/info.png"   width="50px"  height="50px" alt="/"> About</a>
+        </li>
+		 <li class="nav-item">
+          <a class="nav-link" href="#skill-id"><img src="img/tools.png"   width="50px"  height="50px" alt="/"> Skills</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <img src="img/contact.png"   width="50px"  height="50px" alt="/"> Contact
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+            <li><a class="dropdown-item" href="#">Facebook</a></li>
+            <li><a class="dropdown-item" href="#">Github</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Linkin</a></li>
+          </ul>
+        </li>
+       
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+</nav>
+
+
+
+<div class="containter">
+<div class="row">
+<div class="col-md-6">
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="100">
+      <img src="img/miror.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Photo Editing</h5>
+        
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="100">
+      <img src="img/m.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Photo Editing</h5>
+       
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/p.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Photo Editing</h5>
+       
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+
+<!-- navbar starts here  -->
+   
+   
+    <!-- navbar ends here  -->
+
+
+<div class="jumbotron" id="about-me">
+  <h1 class="display-8"  style="font-family:cursive" >Website Developer & Graphic Designer</h1>
+  <p class="lead">This is Nazmin. Welcome to my personal page that I’ve designed to showcase my skills and expertise that I’ve accumulated over the year.</p>
+ 
+  <p class="lead">
+
+  <button class="button"><a href="morepage.html">Know More</a></button>
+  </p>
+</div>
+</div> 
+</div>
+</div>
+
+
+
+
+    <!-- about me div ends here  -->
+<!-- about me div starts here  -->
+    <div class="about-me"  style="background-color:orange" id="about-me-id">
+        <h2>ABOUT ME</h2>
+        <hr class="dotted-hr">       
+        <div class="aboutme-image col-3">
+            <img src="img/j.jpg" alt="">
+        </div>
+        <div class="aboutme-desc col-4">
+            <p>I like to call myself “a passionate computer & Web developer”.I like programming and designing.I am an honest person.I don't like to share my pic on social site because i like to obey all islamic rules.</p>
+          
+            <hr class="aboutme-hr">
+            <p>Name:Nazmin Dipty</p> 
+            <hr class="aboutme-hr">
+            <p>Address: Dhaka, Bangladesh</p>
+            <hr class="aboutme-hr">
+        
+           
+
+        </div>
+		</div>
+
+    <!-- professional-experience div starts here  -->
+    <div class="professional-experience">
+        <div class="work-experience col-4">  
+             <div class="card">
+                 <div class="card-icon">
+                     <!-- <i class="fa fa-briefcase fa-4x rounded-img" aria-hidden="true"></i> -->
+                     <img class="rounded-img" src="img/work.png" alt="">  
+                 </div>
+                 <div class="card-title">
+                     <h2>WORK EXPERIENCE</h2>
+                 </div>
+                 <div class="card-description">
+                     <ol>
+                         <li>
+                             <strong>junior JEE Website Developer</strong><br>
+                             25/1/2020–30/04/2020 <br>
+                             Biziitech Ltd.<br>
+                             New Elephant Road, Dhaka (Bangladesh) <br> 
+                         </li>
+                         <hr>
+                         <li>
+                             <strong>Intern</strong> <br>
+                             10/5/2018–15/07/2019 <br>
+                             APCL keari plaza 4th floor, Dhanmondi-15 <br>
+                             Dhaka (Bangladesh) <br>
+                         </li>
+                         <hr>
+                         <li>
+                             <strong>Assistant Teacher</strong> <br>
+                             01/01/2018–1/5/2018 <br>
+                             Siam School <br>
+                            Kamrangir chor, Dhaka (Bangladesh)<br>
+                         </li>
+                         <hr>
+                         <li>
+                             <strong>Intern</strong> <br>
+                             28/01/2017–12/5/2017<br>
+                            Al-arafa Islamic bank Ltd. <br>
+                             
+                           </li>
+                     </ol> 
+                 </div>           
+            
+             </div>     
+        </div>
+ 
+ 
+        <div class="education col-4">
+             <div class="card">
+                 <div class="card-icon">
+                     <!-- <i class="fa fa-briefcase fa-2x" aria-hidden="true"  style="font-size:120px;color:white"></i> -->
+                     <!-- <i class="fa fa-graduation-cap fa-4x rounded-img" aria-hidden="true"></i> -->
+                     <img class="rounded-img" src="img/book.png" alt="">  
+                 </div>
+                 <div class="card-title">
+                     <h2>EDUCATION AND TRAINING</h2>
+                 </div>
+                 <div class="card-description">
+                     <ol>
+					   <li>
+                            <strong>Graphic Designer</strong> <br>
+                            25-3-2021 Running<br>
+                          Ledp online class form Bangladesh Ict Sector <br>
+                           
+                          
+                         </li>
+                         <li>
+                            <strong>J2EE Software Development</strong> <br>
+                            2018-2019 <br>
+                           APCL keari plaza 4th floor, Dhanmondi-15 from <br>
+                           IDB-BISEW IT Scholarship project <br>
+                          
+                         </li>
+                         <hr>
+                         <li>
+                            <strong>M.B.A at Accounting </strong> <br>
+                            2017-2018</br>
+                            Dhaka University <br>
+                           Dhaka, (Bangladesh)  <br>
+           
+                            Result: A (3.25/4.00) <br>
+                         </li>
+                         <hr>
+                               
+                     </ol> 
+                 </div>
+             </div>
+        </div>
+ 
+ 
+        <div class="skills col-4" id="skill-id">
+            <div class="card">
+                <div class="card-icon">                 
+                    <img class="rounded-img" src="img/tools.png" alt="">               
+                </div>
+                <div class="card-title">
+                    <h2>SKILLS</h2>
+                </div>
+                <div class="card-description">
+                    <div class="skills-container">
+                        <ul>
+						<li class="html">English Language</li>
+						 <li class="jquery">Flutter Apps Development</li>   
+						<li class="html">Graphic Design</li>
+                            <li class="html">HTML</li>
+                            <li class="css">CSS</li>
+                            <li class="bootstrap">Bootstrap</li>
+                          
+						  
+                                                   
+                           <li class="git">Android Apps Develop</li>
+                            <li class="git">Java</li>
+                            
+                        </ul>
+                    </div>                   
+                </div>
+            </div>
+        </div>
+     </div>
+     <!-- professional-experience div ends here  -->
+	 
+	 
+	 
+<h1  style="background-color:Tomato;" style="font-color:red"><center>Some of my Projects Demo</center></h1>
+<div class="container">
+
+<div class="row">
+<div class="col-md-6">
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="100">
+      <img src="img/c.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Website part Design &Develop</h5>
+        <p>Full project is done by Spring.</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="100">
+      <img src="img/choclate.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Graphic Photo Editing</h5>
+        <p>Graphic design by Adobe photoshop.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/evn.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Website Develop</h5>
+        <p>Using Angular js</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+
+
+  <div class="card">
+  
+    <div class="card-body">
+      
+<video width="400" controls>
+  <source src="mov_bbb.mp4" type="video/mp4">
+  <source src="mov_bbb.ogg" type="video/ogg">
+  Your browser does not support HTML video.
+</video>
+
+<p>
+Video courtesy of 
+a href="https://fb.watch/5eLlErOQ4y/" target="_blank">Logo Design</a>.
+</p>
+
+    </div>
+  </div>
+
+</div>
+</div>
+
+</div>
+<!--  card-->
+<div class="container">
+
+  <div class="card-group">
+  <div class="card">
+    <img src="img/label.jpg"  alt="...">
+	
+    <div class="card-body">
+      <h5 class="card-title">Label Design</h5>
+      
+    </div>
+  </div>
+  <div class="card">
+    <img src="img/chill.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Tshirt Design</h5>
+      
+    </div>
+  </div>
+  <div class="card">
+    <img src="img/bzcard.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">BusinessCard Design</h5>
+     
+    </div>
+  </div>
+</div>
+</div>
+
+    <!-- footer div starts here  -->
+    <div class="footer"   style="font-color:red">          
+       <div class="footer-menu col-4">
+            <a href="#">Home</a>
+            <a href="#about-me">About Me</a>
+            <a href="#skill-id">Skills</a>
+            
+            <a href="#contact-me">Contact</a>
+			
+			<div class="card">
+    <img src="img/b.jpg" class="card-img-top" alt="...">
+    
+  </div>
+        </div>
+       <div class="contact col-4" id="contact-me">
+           <h2 style="background-color:LightGray;">CONTACT ME</h2>
+      
+           <form action="mailto:nazmindipty1991@gmail.com" method="post" enctype="text/plain">
+               <p><input type="text" placeholder="Your Name" name="name"></p>
+               <p><input type="email" placeholder="Your Email" name="email"></p>
+               <textarea placeholder="Your Message Here" name="message" cols="30" rows="10"></textarea>
+               <button type="submit">SEND</button>
+               <button type="reset">RESET</button>
+            </form>
+       </div>
+
+
+ 
+  <div class="contact-links col-4" >
+            <h2>More Ways to Contact</h2>
+            <hr class="dotted-hr">        
+            <div class="media-buttons">
+
+                <button class="btn" onclick="window.open('https://www.facebook.com/studywithanis')" class="btn request-callback"><i class="fa fa-facebook" style="color:  #3b5998;" aria-hidden="true"></i></button>
+               </button>
+                <button class="btn" onclick="window.open('https://www.linkedin.com/in/anisul-islam-515a7714a/')" class="btn request-callback"><i class="fa fa-linkedin" style="color:  #3b5998;" aria-hidden="true"></i></button>
+                <button class="btn" onclick="window.open('https://github.com/anisul-Islam')" class="btn request-callback"><i class="fa fa-github" aria-hidden="true" style="color: #000000;"></i></button>
+            </div>
+             </div>
+            
+            <!-- 
+                <button class="btn"><i class="media-icon fa fa-youtube-play" style="color: #c4302b;" aria-hidden="true"></i>YouTube</button>
+            -->
+       
+</div>
+<h1 style="font-family:cursive; font-color:white"><center><marquee>Thank you for visiting my portfolio.If possible help the poor people.</marquee></center></h1></a>
+
+<div class="footer-desc col-12">
+            &copy; Dil 2021. Developed with <span style="color: red; font-size: 1.5rem;">❤</span> By Nazmin
+        </div>
+    <!-- footer div ends here  -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+	</body>
+</html>
